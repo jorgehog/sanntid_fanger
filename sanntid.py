@@ -123,6 +123,7 @@ if __name__ == "__main__":
 		stdout += "%s"*len(routes) % tuple([(TIME + (" (%2dm)".replace(" ( 0m)", " (now)") % get_dt(TIME))*(i<3)).center(spacing) for TIME in timeset]) + "\n"
 		i+=1
 	
+	stdout += "\n"
 	sys.stdout.write(stdout)
 
 
